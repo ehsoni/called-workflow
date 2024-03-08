@@ -4,7 +4,7 @@ on:
     branches: [ "master" ]
 jobs:
   build:
-    uses: ehsoni/reusable-workflow/workflows/testworkflow.yaml@main
+    uses: ehsoni/reusable-workflow/.github/workflows/testworkflow.yaml@main
     with:
       input1: "soni"
       input2: "anvi"
