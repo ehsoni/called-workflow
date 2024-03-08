@@ -1,8 +1,10 @@
 name: Caller Workflow
-on: [push, pull_request]
+on:
+ push:
+    branches: [ "master" ]
 jobs:
   build:
-    uses: https://github.com/itsSathyavathi/reusable_workflow/pull.yaml@main
+    uses: https://github.com/ehsoni/reusable-workflow/workflows/testworkflow.yaml@main
     with:
       input1: "soni"
       input2: "anvi"
